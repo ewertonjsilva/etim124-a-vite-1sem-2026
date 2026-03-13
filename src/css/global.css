@@ -1,3 +1,7 @@
+:root {
+  width: 100%;
+}
+
 html {
   /* Adiciona um efeito de rolagem suave quando links internos são clicados */
   scroll-behavior: smooth;
