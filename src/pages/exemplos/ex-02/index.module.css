@@ -1,5 +1,6 @@
-.containerEx2 {
+.container {
     display: flex; 
     flex-direction: column; 
+        border: 0.3rem solid #00f;
 }
 

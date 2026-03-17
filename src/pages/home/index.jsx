@@ -1,31 +1,21 @@
-
-import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router";
 
-import './index.css';
+import styles from './index.module.css';
 
 function Home() {
 
-  const navigate = useNavigate();
-
   return (
-    <div className='containerHome'>
-      <div className='containerAlinhamento'>
+    <div className={styles.container}>
         <h1>Aula de React com Vite JS</h1>
-        <div className='containerCards'>
-          <button
-            onClick={() => navigate('/exemplo/1')}
-          >
-            Exemplo 1
-          </button>
-
-          <Link to="/exemplo/2">Exemplo 2</Link>
+        <div className={styles.containerCards}>   
+          <h2>Exemplos</h2>       
+          <Link to="/exemplo/1">Exemplo 1 - Componente básico</Link>
+          <Link to="/exemplo/2">Exemplo 2 - Uso de module CSS</Link>          
         </div>
-
-
-
-      </div>
-
+        
+        <div className={styles.containerCards}>    
+          <h2>Atividades</h2>      
+        </div>
     </div>
   )
 }

@@ -1,5 +1,13 @@
-:root {
-  width: 100%;
+#root {
+  background-color: #fafafa;
+  color: #212121;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 32rem;
+  min-height: 100vh;
+  border: 1px solid red;
 }
 
 html {
@@ -9,22 +17,6 @@ html {
   font-size: 62.5%;
   /* Garante que o elemento html não seja maior que a largura da viewport */
   max-width: 100vw;
-}
-
-body {
-  background-color: #fafafa;
-  color: #212121;
-  /* margin: 10px; */
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  /* place-items: center; */
-  min-width: 32rem;
-  min-height: 100vh;
-  border: 1px solid red;
-  /* box-sizing: border-box; */
 }
 
 * {
@@ -69,6 +61,8 @@ small {
 
 a {
   text-decoration: none;
+  font-size: 1.6rem;
+  line-height: 1.3;
 }
 
 /* Estilo para Inputs, Selects e Textareas */
