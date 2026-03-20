@@ -11,10 +11,12 @@ function Home() {
           <h2>Exemplos</h2>       
           <Link to="/exemplo/1">Exemplo 1 - Componente básico</Link>
           <Link to="/exemplo/2">Exemplo 2 - Uso de module CSS</Link>          
+          <Link to="/exemplo/3">Exemplo 3 - Estados</Link>          
         </div>
         
         <div className={styles.containerCards}>    
-          <h2>Atividades</h2>      
+          <h2>Atividades</h2>  
+          <Link to="/atividade/1">Atividade 1 - Uso CSS</Link>    
         </div>
     </div>
   )

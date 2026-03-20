@@ -1,16 +1,23 @@
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
 function Exemplo02() {
   return (
-    <div className={styles.container}>
-      <h1>Exemplo 2</h1>
-      <h2>Estilização CSS</h2>
-      <h3>Uso de Css em diferentes componentes</h3>
-      <p>Eu não fiz nada</p>
+    <div className={styles.containerExemplo}>
+      <h1>React com Next JS</h1>
+      <h2>Aula de introdução</h2>
+      <h3>Leiaute e Estilização</h3>
+      <p>Nesta aula iremos entender o uso de CSS global e local.</p>
       <label>Exemplo Label</label>
-      <span>Exemplo Span</span>
+      <small>Exemplo Small</small>
+      <div className={styles.conteinerExPosicao}>
+        <div className={styles.divVermelha}></div>
+        <div className={styles.divVerde}></div>
+        <div className={styles.divBranca}></div>
+        <div className={styles.divPreta}></div>
+        <div className={styles.divEscura}></div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default Exemplo02;
