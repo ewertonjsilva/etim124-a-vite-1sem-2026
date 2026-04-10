@@ -1,23 +1,28 @@
-import styles from "./index.module.css";
+
+import styles from './index.module.css';
 
 function Exemplo02() {
+
   return (
-    <div className={styles.containerExemplo}>
-      <h1>React com Next JS</h1>
-      <h2>Aula de introdução</h2>
-      <h3>Leiaute e Estilização</h3>
-      <p>Nesta aula iremos entender o uso de CSS global e local.</p>
+    <div className={styles.container}>
+      <h1>Aula Introdução Vite JS</h1>      
+      <h2>Preparo do projeto</h2>
+      <h3>Estilização</h3>
+      <p>Entendendo uso de css dentro do projeto.</p>
       <label>Exemplo Label</label>
       <small>Exemplo Small</small>
-      <div className={styles.conteinerExPosicao}>
-        <div className={styles.divVermelha}></div>
-        <div className={styles.divVerde}></div>
-        <div className={styles.divBranca}></div>
-        <div className={styles.divPreta}></div>
-        <div className={styles.divEscura}></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, blanditiis delectus. Nihil sed consequuntur voluptate maiores, enim voluptates, deleniti voluptatum facere possimus facilis, molestiae nostrum placeat quidem consectetur suscipit sunt!. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nemo explicabo dicta sequi maiores nam laudantium? Doloremque deserunt voluptates quidem nulla delectus nam illum. Tenetur quisquam placeat consequuntur expedita quasi. 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat magnam incidunt fugit reprehenderit dolor quidem natus, iste eveniet inventore accusantium rerum culpa. Nisi tempore consequuntur suscipit quia maiores ab. Fugiat!
+      </p>
+      <div className={styles.containerBlocos}>
+        <div className={styles.brancoBranco}></div>
+        <div className={styles.brancoCinza}></div>
+        <div className={styles.pretoPreto}></div>
+        <div className={styles.pretoCinza}></div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Exemplo02;

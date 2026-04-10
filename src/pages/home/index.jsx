@@ -5,19 +5,38 @@ import styles from './index.module.css';
 function Home() {
 
   return (
-    <div className={styles.container}>
-        <h1>Aula de React com Vite JS</h1>
-        <div className={styles.containerCards}>   
-          <h2>Exemplos</h2>       
-          <Link to="/exemplo/1">Exemplo 1 - Componente básico</Link>
-          <Link to="/exemplo/2">Exemplo 2 - Uso de module CSS</Link>          
-          <Link to="/exemplo/3">Exemplo 3 - Estados</Link>          
-        </div>
-        
-        <div className={styles.containerCards}>    
-          <h2>Atividades</h2>  
-          <Link to="/atividade/1">Atividade 1 - Uso CSS</Link>    
-        </div>
+    <div className={styles.container}>      
+      <div className={styles.containerLista}>
+        <h1>Exemplos</h1>
+        <Link to="/exemplo/1">Exemplo 1 - Componente básico</Link>
+        <Link to="/exemplo/2">Exemplo 2 - Estilização com module</Link>
+        <Link to="/exemplo/3">Exemplo 3 - State</Link>
+        <Link to="/exemplo/4">Exemplo 4 - Componentes</Link>
+        <Link to="/exemplo/5">Exemplo 5 - Formulário básico</Link>
+        <Link to="/exemplo/6">Exemplo 6 - Diferentes tipos de input, select e textArea</Link>
+        <Link to="/exemplo/7">Exemplo 7 - Seletores</Link>
+        <Link to="/exemplo/8">Exemplo 8 - Uso de tabela</Link>
+        <Link to="/exemplo/9">Exemplo 9 - Vídeo Player</Link>
+        <Link to="/exemplo/10">Exemplo 10 - Dashboard</Link>
+        <Link to="/exemplo/11">Exemplo 11 - Mockup</Link>
+        <Link to="/exemplo/12">Exemplo 12 - Mockup + Local Storage</Link>
+        <Link to="/exemplo/13">Exemplo 13 - Validação básica</Link>
+        <Link to="/exemplo/14">Exemplo 14 - Validação state</Link>
+        <Link to="/exemplo/15">Exemplo 15 - useForm</Link>
+      </div>
+      <div className={styles.containerLista}>
+        <h1>Atividades</h1>
+        <Link to="/atividade/1">Atividade 1 - Estilização básica</Link>
+        <Link to="/atividade/2">Atividade 2 - State</Link>
+        <Link to="/atividade/3">Atividade 3 - Componentes dinâmicos</Link>
+        <Link to="/atividade/4">Atividade 4 - Formulário livre</Link>
+        <Link to="/atividade/5">Atividade 5 - Formulário simulação</Link>
+        <Link to="/atividade/6">Atividade 6 - Local Storage</Link>
+        <Link to="/atividade/7">Atividade 7 - Múltiplos estados e fornecer feedback numérico em tempo real</Link>
+        <Link to="/atividade/8">Atividade 8 - onChange, onSubmit e formData</Link>
+        <Link to="/atividade/9">Atividade 9 - Validação com useForm</Link>
+        <Link to="/atividade/10">Atividade 10 - Desafio final</Link>
+      </div>
     </div>
   )
 }
