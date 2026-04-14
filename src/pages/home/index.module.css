@@ -19,3 +19,9 @@
     height: 45vh; 
     overflow-y: auto;
 }
+
+.coluna {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}

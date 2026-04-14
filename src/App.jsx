@@ -29,6 +29,8 @@ import Atividade08 from './pages/atividades/atv-08';
 import Atividade09 from './pages/atividades/atv-09'; 
 import Atividade10 from './pages/atividades/atv-10';
 
+import Correcao02 from './pages/correcoes/correcao-02';
+
 function App() {
 
   return (
@@ -61,6 +63,8 @@ function App() {
     <Route path="/atividade/8" element={<Atividade08 />} />
     <Route path="/atividade/9" element={<Atividade09 />} />
     <Route path="/atividade/10" element={<Atividade10 />} />
+    
+    <Route path="/correcao/2" element={<Correcao02 />} />
 
   </Routes>
   )
