@@ -1,4 +1,4 @@
-import { useState } from 'react';  
+import { useState } from 'react';
 import { Pencil, Trash2, Plus, Save } from 'lucide-react';
 
 import styles from './index.module.css';
@@ -22,7 +22,7 @@ function Atividade05() {
 
     if (editingId) {
       // Lógica de UPDATE
-      setItems(items.map(item => 
+      setItems(items.map(item =>
         item.id === editingId ? { ...item, text: inputValue } : item
       ));
       setEditingId(null);
@@ -53,9 +53,9 @@ function Atividade05() {
       <h1>Mockup CRUD Vite</h1>
 
       <form onSubmit={handleSubmit}>
-        <input 
-          type="text" 
-          value={inputValue} 
+        <input
+          type="text"
+          value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           placeholder="Digite algo..."
         />
@@ -64,10 +64,10 @@ function Atividade05() {
           {editingId ? 'Salvar Edição' : 'Adicionar'}
         </button>
         {
-            editingId && 
-            <button onClick={() => {setEditingId(null); setInputValue('');}}>
-                Cancelar
-            </button>
+          editingId &&
+          <button onClick={() => { setEditingId(null); setInputValue(''); }}>
+            Cancelar
+          </button>
         }
       </form>
 

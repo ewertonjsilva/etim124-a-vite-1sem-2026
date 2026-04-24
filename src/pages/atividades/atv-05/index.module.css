@@ -1,12 +1,12 @@
 .container {
-    padding: 20rem; 
+    padding: 20rem;
     font-family: 'sans-serif';
 }
 
 .lista {
     display: flex;
-    flex-direction: column; 
-    width: 40rem; 
+    flex-direction: column;
+    width: 40rem;
 
 }
 
@@ -21,11 +21,11 @@
 }
 
 .conteudo {
-    margin-right: 1rem; 
+    margin-right: 1rem;
     font-size: 1.6rem;
 }
 
 .botao {
-    background-color: #fafafa; 
+    background-color: #fafafa;
     border: 0.3rem solid #646cff;
 }

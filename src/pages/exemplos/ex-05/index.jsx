@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import styles from './index.module.css';
 
-export default function FormComponent() {
+export default function Exemplo05() {
 
     // const [formData, setFormData] = useState({ nome: '', email: '' });
     const [login, setLogin] = useState('');
@@ -20,7 +20,7 @@ export default function FormComponent() {
         // if (login && senha) {
         //     console.log('Dados do formulário enviados!');
         //     console.log(`Usuário: ${login} \nSenha: ${senha}`);
-        
+
         //     let historicoTemp = historico;
 
         //     // Exemplo horário
@@ -33,13 +33,13 @@ export default function FormComponent() {
         // }
 
         if (login && senha) {
-        const horario = new Date();
-        const novaEntrada = `Usuário: ${login} - Horário ${horario.toLocaleString()}`;
+            const horario = new Date();
+            const novaEntrada = `Usuário: ${login} - Horário ${horario.toLocaleString()}`;
 
-        // Cria um NOVO array com os elementos antigos + o novo
-        // setHistorico([novaEntrada]);
-        setHistorico([...historico, novaEntrada]);
-    }
+            // Cria um NOVO array com os elementos antigos + o novo
+            // setHistorico([novaEntrada]);
+            setHistorico([...historico, novaEntrada]);
+        }
     };
 
     return (
@@ -70,9 +70,9 @@ export default function FormComponent() {
 
             <div className={styles.historico}>
                 <h3>Histórico de Logins</h3>
-                
+
                 {
-                    historico.map( item => 
+                    historico.map(item =>
                         <p key={item}>{item}</p>
                     )
                 }
