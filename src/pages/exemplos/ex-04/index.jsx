@@ -19,7 +19,6 @@ function Exemplo04() {
             {/* Passando funções e textos via Props para o componente Botao */}
             <Botao texto="Diminuir -" aoClicar={decrementar} acao={'-'} />
             <Botao texto="Aumentar +" aoClicar={incrementar} acao={'+'} />
-            
         </div>
     );
 }
